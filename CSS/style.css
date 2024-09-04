@@ -1,0 +1,658 @@
+:root {
+    --color-bg-black: #0f0f0f;
+    --color-bg-white: #f0f0f0;
+    --color-bg-gray: #e7e9ec;
+    --color-bg-blue: #bfcce9;
+}
+
+:root{
+    --width-content: 1080px;
+}
+
+html{
+    color: #000000;
+    background: #ffffff;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td{
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+fieldset,
+img{
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var{
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+caption,
+th{
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-size: 100%;
+    font-weight: normal;
+
+}
+
+q:before,
+q:after{
+    content: "";
+}
+
+abbr,
+acronym{
+    border: 0;
+    font-variant: normal;
+}
+
+sup{
+    vertical-align: text-top;
+}
+
+input,
+textarea,
+select,
+button{
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-size: 100%;
+    border-radius: 0;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: inherit;
+}
+
+input,
+textarea,
+select{
+    font-size: 16px;
+}
+
+textarea{
+    resize: vertical;
+    display: block;
+}
+
+button{
+    padding: 0;
+    cursor: pointer;
+}
+
+legend{
+    color: #000;
+}
+
+main{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+svg{
+    display: block;
+}
+
+*{
+    -webkit-font-smooting: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.75;
+    font-size: 16px;
+    color: var(--color-font-base);
+    font-family: var(--font-family-base);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.company-name{
+    font-family: Noto Serif JP, serif;
+    font-size: 21px;
+    font-weight: bold;
+    width: 30%;
+}
+
+.header-nav{
+    font-family: Noto serif JP, serif;
+    width: 50%;
+}
+
+.header-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-item:hover{
+    color: #807d7d;
+    text-decoration: underline;
+}
+
+.fv{
+    height: 80vh;
+    background-image: url(../images/fv.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.fv-text{
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 40px;
+    color: #f0f0f0;
+    position: absolute;
+    bottom: 70px;
+    left: 70px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.corporate-philosophy{
+    padding: 50px 20px;
+}
+
+.block-title{
+    font-family: Noto Serif JP, serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.block-subtitle{
+    font-family: Noto Serif JP, serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.corporate-philosophy-box{
+    padding: 0 10px;
+}
+
+.block-text{
+    font-family: Noto Serif JP, serif;
+    font-size: 18px;
+    width: 70%;
+}
+
+.service{
+    padding: 50px 20px;
+}
+
+.service-item-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.service-block{
+    width: 90%;
+}
+
+.service-block:hover{
+    opacity: 0.6;
+}
+
+.dli-chevron-round-right {
+    display: inline-block;
+    vertical-align: middle;
+    color: #807d7d;
+    line-height: 1;
+    position: relative;
+    width: 8px;
+    height: 8px;
+    transform: translateX(-25%) rotate(45deg);
+  }
+  
+  .dli-chevron-round-right::before, .dli-chevron-round-right::after {
+    content: '';
+    position: absolute;
+    background: currentColor;
+    border-radius: 0.1em;
+  }
+  
+  .dli-chevron-round-right::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0.1em;
+  }
+  
+  .dli-chevron-round-right::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0.1em;
+  }
+
+.service-item-text{
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Noto Serif JP, serif;
+    color: #807d7d;
+}
+
+.news{
+    padding: 50px 20px;
+    background-color: #e7e9ec;
+}
+
+.news_list {
+    margin: 0 5%;
+  }
+  
+  .news_list_item {
+    padding: 25px 0;
+    border-bottom: 1px solid #0f0f0f;
+  }
+  
+  .news_list_item:first-child {
+    border-top: 1px solid #0f0f0f;
+  }
+
+.news_list_item:hover{
+    opacity: 0.6;
+}
+
+  .news_list_item a {
+   position: relative;
+   display: flex;
+   padding-right: 30px;
+  }
+  
+  .news_list_date {
+    font-size: 15px;
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+  }
+
+  .news-text{
+    font-family: Noto Serif JP, serif;
+  }
+  
+  .arrow {
+    width: 25px;
+    height: 1px;
+    background: #707070;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+  
+  .arrow::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 1px;
+    background: #707070;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 0px;
+    bottom: 2px;
+  }
+
+  .all-news-list-text{
+    font-family: Noto Serif JP, serif;
+    font-size: 18px;
+    text-decoration: underline;
+    color: #807d7d;
+    margin: 30px 60px 20px auto;
+    position: relative;
+    text-align: right;
+  }
+
+  .all-news-list-text:hover{
+    opacity: 0.7;
+  }
+   
+
+.cta{
+    padding: 50px 20px;
+}
+
+.cta-button{
+    background-color: #bfcce9;
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.cta-button:hover{
+    opacity: 0.6;
+}
+
+.cta-text{
+    font-family: Noto Serif JP, serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer{
+    padding: 50px 20px 20px 20px;
+    background-color: #bfcce9;
+    display: grid;
+}
+
+.footer-container-1{
+    margin-bottom: 30px;
+}
+
+.footer-logo{
+    font-family: Noto Serif JP, serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.footer-adress{
+    font-family: Noto Serif JP, serif;
+    font-size: 20px;
+}
+
+.footer-container-2{
+    margin-bottom: 20px;
+}
+
+.footer-list{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.footer-list-item{
+    font-family: Noto Serif JP, serif;
+    font-size: 16px;
+    margin: 0 20px;
+}
+
+.footer-list-item:hover{
+    color: #807d7d;
+    text-decoration: underline;
+}
+
+.copyright{
+    font-family: Noto Serif JP, serif;
+    font-size: 10px;
+    text-align: right;
+}
+
+@media screen and (max-width: 1024px) {
+    .news_list_item a {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .header{
+        padding: 30px 20px;
+    }
+    .header-nav{
+        width: 70%;
+    }
+
+    .header-item{
+        font-size: 12px;
+    }
+
+    .news_list_item a  {
+        font-size: 14px;
+    }
+
+    .fv-text{
+        font-size: 32px;
+        bottom: 80px;
+        left: 30px;
+    }
+
+    .corporate-philosophy{
+        padding: 40px 20px;
+    }
+
+    .block-title{
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .block-subtitle{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .block-text{
+        font-size: 16px;
+        width: 85%;
+    }
+
+    .service{
+        padding: 40px 20px;
+    }
+
+    .service-item-block{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .service-block{
+        margin: 32px 0;
+    }
+
+    .dli-chevron-round-right{
+        width: 12px;
+        height: 12px;
+    }
+
+    .service-item-text{
+        font-size: 20px;
+    }
+
+    .news{
+        padding: 40px 20px;
+    }
+
+    .news-text{
+        font-size: 18px;
+    }
+
+    .arrow{
+        width: 20px;
+    }
+
+    .all-news-list-text{
+        font-size: 16px;
+    }
+
+    .cta{
+        padding: 40px 20px;
+    }
+
+    .cta-button{
+        width: 60%;
+    }
+
+    .cta-text{
+        font-size: 28px;
+    }
+
+    .footer{
+        padding: 20px;
+    }
+
+    .footer-container-1{
+        margin-bottom: 30px;
+    }
+
+    .footer-logo{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .footer-adress{
+        font-size: 16px;
+    }
+
+    .footer-list-item{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header{
+        flex-direction: column;
+    }
+
+    .company-name{
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .fv{
+        height: 70vh;
+    }
+
+    .fv-text{
+        font-size: 32px;
+        left: 20px;
+    }
+
+    .header-nav{
+        width: 100%;
+    }
+
+    .corporate-philosophy{
+        padding: 20px;
+    }
+
+    .block-title{
+        font-size: 28px;
+    }
+
+    .block-subtitle{
+        font-size: 20px;
+    }
+
+    .block-text{
+        font-size: 14px;
+    }
+
+    .dli-chevron-round-right{
+        width: 6px;
+        height: 6px;
+    }
+
+    .service-item-text{
+        font-size: 16px;
+    }
+
+    .news-text{
+        font-size: 14px;
+    }
+
+    .all-news-list-text{
+        font-size: 14px;
+    }
+
+    .arrow {
+        display: none;
+    }
+    .news_list_item a {
+        padding-right: 0;
+    }
+
+    .cta-button{
+        width: 70%;
+    }
+
+    .cta-text{
+        font-size: 24px;
+    }
+
+    .footer-logo{
+        font-size: 32px;    
+    }
+
+    .footer-adress{
+        font-size: 14px;
+    }
+
+    .footer-list-item{
+        font-size: 12px;
+        margin: 0 10px;
+    }
+}
